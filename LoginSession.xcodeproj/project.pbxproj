@@ -13,9 +13,12 @@
 		1F8BA64925A437330020EB08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8BA64725A437330020EB08 /* Main.storyboard */; };
 		1F8BA64B25A437380020EB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8BA64A25A437380020EB08 /* Assets.xcassets */; };
 		1F8BA64E25A437380020EB08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8BA64C25A437380020EB08 /* LaunchScreen.storyboard */; };
+		1F8BA68325A4721A0020EB08 /* AfterLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8BA68225A4721A0020EB08 /* AfterLoginViewController.swift */; };
+		8A9089759200A5804E16E8A0 /* Pods_LoginSession.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA45F54BAE4B561BAC05A74 /* Pods_LoginSession.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16DF7A9BB4125AC69FE2B165 /* Pods-LoginSession.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSession.release.xcconfig"; path = "Target Support Files/Pods-LoginSession/Pods-LoginSession.release.xcconfig"; sourceTree = "<group>"; };
 		1F8BA63E25A437330020EB08 /* LoginSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8BA64125A437330020EB08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8BA64325A437330020EB08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		1F8BA64A25A437380020EB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F8BA64D25A437380020EB08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F8BA64F25A437380020EB08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8BA68225A4721A0020EB08 /* AfterLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfterLoginViewController.swift; sourceTree = "<group>"; };
+		9FA45F54BAE4B561BAC05A74 /* Pods_LoginSession.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginSession.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5FB7E631B38C1347203E87 /* Pods-LoginSession.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginSession.debug.xcconfig"; path = "Target Support Files/Pods-LoginSession/Pods-LoginSession.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9089759200A5804E16E8A0 /* Pods_LoginSession.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				1F8BA64025A437330020EB08 /* LoginSession */,
 				1F8BA63F25A437330020EB08 /* Products */,
+				37BF790C9FB0AEFF7EFDA0EE /* Pods */,
+				F704EE0BA97F42966929B2FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +69,29 @@
 				1F8BA64325A437330020EB08 /* SceneDelegate.swift */,
 				1F8BA64525A437330020EB08 /* ViewController.swift */,
 				1F8BA64725A437330020EB08 /* Main.storyboard */,
+				1F8BA68225A4721A0020EB08 /* AfterLoginViewController.swift */,
 				1F8BA64A25A437380020EB08 /* Assets.xcassets */,
 				1F8BA64C25A437380020EB08 /* LaunchScreen.storyboard */,
 				1F8BA64F25A437380020EB08 /* Info.plist */,
 			);
 			path = LoginSession;
+			sourceTree = "<group>";
+		};
+		37BF790C9FB0AEFF7EFDA0EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD5FB7E631B38C1347203E87 /* Pods-LoginSession.debug.xcconfig */,
+				16DF7A9BB4125AC69FE2B165 /* Pods-LoginSession.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F704EE0BA97F42966929B2FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA45F54BAE4B561BAC05A74 /* Pods_LoginSession.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F8BA65225A437380020EB08 /* Build configuration list for PBXNativeTarget "LoginSession" */;
 			buildPhases = (
+				A5E1B0805F4F02972E0486D7 /* [CP] Check Pods Manifest.lock */,
 				1F8BA63A25A437330020EB08 /* Sources */,
 				1F8BA63B25A437330020EB08 /* Frameworks */,
 				1F8BA63C25A437330020EB08 /* Resources */,
+				63AE786913A641ED474F7175 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +161,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63AE786913A641ED474F7175 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginSession/Pods-LoginSession-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginSession/Pods-LoginSession-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginSession/Pods-LoginSession-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5E1B0805F4F02972E0486D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginSession-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F8BA63A25A437330020EB08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 				1F8BA64625A437330020EB08 /* ViewController.swift in Sources */,
 				1F8BA64225A437330020EB08 /* AppDelegate.swift in Sources */,
 				1F8BA64425A437330020EB08 /* SceneDelegate.swift in Sources */,
+				1F8BA68325A4721A0020EB08 /* AfterLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +355,14 @@
 		};
 		1F8BA65325A437380020EB08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5FB7E631B38C1347203E87 /* Pods-LoginSession.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DSX3CQY2V;
 				INFOPLIST_FILE = LoginSession/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +376,14 @@
 		};
 		1F8BA65425A437380020EB08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16DF7A9BB4125AC69FE2B165 /* Pods-LoginSession.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DSX3CQY2V;
 				INFOPLIST_FILE = LoginSession/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
