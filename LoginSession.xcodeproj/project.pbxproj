@@ -48,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F3427FB25AAE054009102CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F8BA69125A496380020EB08 /* SlideinTransition.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1F8BA63525A437330020EB08 = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +80,7 @@
 				1F8BA69425A496980020EB08 /* Supporting files */,
 				1F8BA69625A496B50020EB08 /* ViewControllers */,
 				1F8BA64725A437330020EB08 /* Main.storyboard */,
-				1F8BA69125A496380020EB08 /* SlideinTransition.swift */,
+				1F3427FB25AAE054009102CA /* Models */,
 				1F8BA64A25A437380020EB08 /* Assets.xcassets */,
 				1F8BA64F25A437380020EB08 /* Info.plist */,
 			);
